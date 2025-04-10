@@ -1,18 +1,18 @@
 use std::time::Instant;
 
 fn main() {
-    let t = 200;
+    let t = 200000000;
     let coins = vec![1, 5, 10, 25, 50, 100];
     let mut moedas_usadas = vec![0; (t + 1) as usize];
     let mut cont_moedas = vec![0; (t + 1) as usize];
 
-    println!("Do algoritmo naive que utiliza recursão: ");
+    /*println!("Do algoritmo naive que utiliza recursão: ");
     let inicio1 = Instant::now();
     let resultado = alg_troco_rec(&coins, t);
     let fim1 = Instant::now();
     println!("O número de moedas para o troco de {} foi: {}, e o tempo de execução foi de {:?}", t, resultado, fim1-inicio1);
 
-    println!("");
+    println!("");*/
     
     println!("Do algoritmo que implementa Programação Dinâmica: ");
     print!("Para o troco de {} foram necessárias", t);
